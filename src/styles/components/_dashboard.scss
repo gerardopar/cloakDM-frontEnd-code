@@ -1,0 +1,79 @@
+.dashboard{
+    align-items: center;
+    background-color: $light-black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.dashboard__title{
+    color: $gold;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
+// dashboard profile
+.dashboard__profile{
+    align-items: center;
+    border-radius: 4px;
+    background: #000000;
+    /*fallbackforoldbrowsers*/background: -webkit-linear-gradient(to left, #434343, #000000);
+    /*Chrome10-25,Safari5.1-6*/background: linear-gradient(to left, #434343, #000000);
+    /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: flex-start;
+    position: relative;
+    width: 75%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.dashboard__user--img{
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    height: 120px;
+    width: 120px;
+    margin-top: 25px;
+}
+
+.dashboard__user--name{
+    color: $mustard;
+}
+
+.dashboard__user--details{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.dashboard__user--details--col{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.dashboard__title{
+    color: $mustard;
+    padding-top: 10px;
+}
+
+.dashboard__text{
+    color: $off-white;
+    padding-top: 10px;
+}
+.dashboard--icon{
+    color: $off-white;
+    padding-top: 10px;
+}

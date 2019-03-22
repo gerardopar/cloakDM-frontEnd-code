@@ -1,0 +1,48 @@
+.conversation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 16px;
+}
+
+.conversation__list--container{
+    height: 100%;
+    width: 100%;
+}
+
+.conversation__title{
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
+// converation item
+.conversation__id--container{
+    align-items: center;
+    background-color: $black;
+    border-radius: 5px !important;
+    color: $off-white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 12px 16px;
+    width: 100%;
+}
+
+.conversation__link{
+    color: $mustard;
+}
+
+
+// conversation user message
+.conversation__msg--wrap{
+    background-color: rgb(32, 32, 32);
+    border-top: solid 1px $mustard; 
+    text-align: center;
+    padding-bottom: 5px;
+    width: 100%;
+}
+.conversation__msg--text{
+    color: $mustard;
+}

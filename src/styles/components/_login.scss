@@ -1,0 +1,71 @@
+.login{
+    align-items: center;
+    background-color: $light-black; 
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+    justify-content: center;
+}
+
+.form--active{
+    color: $gold;
+    border-bottom: solid 1px $gold;
+}
+
+// login form
+.login__title,
+.login__text{
+    color: #fff;
+    text-decoration: none;
+}
+.login__text{
+    margin-bottom: 50px;
+}
+
+.login__form{
+    width: 60%;
+    text-align: center;
+}
+.login__form--email{
+    margin-bottom: 25px !important;
+}
+.login__form--email,
+.login__form--password{
+    background-color: rgba(182, 182, 182, 0.30) !important;
+    border: none !important;
+    border-radius: 5px !important;
+    color: #fff;
+    padding: 12px 16px !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+    width: 50% !important;
+}
+
+.login__form input:focus + label {
+    color: rgb(29, 29, 29) !important;
+}
+/* label underline focus color */
+.login__form input:focus {
+    border: 1px solid $gold !important;
+    box-shadow: 0 1px 0 0 rgb(29, 29, 29) !important
+}
+
+.login__form--btn{
+    background-color: $gold !important;
+    border: none;
+    padding: 12px 16px;
+    margin-top: 25px !important;
+    width: 50%;
+}
+
+.login__forgotPassword--link{
+    cursor: pointer;
+    color: $mustard;
+    margin-top: 10px;
+}
+
+.login__forgotPassword--link:hover{
+    border-bottom: solid 1px $mustard; 
+}

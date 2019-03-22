@@ -1,0 +1,49 @@
+// layout container
+.layout{
+    display: flex;
+    flex-direction: row;
+    height: 92vh;
+    justify-content: space-between;
+    width: 100%;
+}
+
+// layout sidebar
+.layout__sidebar{
+    width: 20%;
+}
+
+// layout content container
+.layout__content{
+    background-color: $light-black;
+    overflow-y: scroll;
+    width: 80%;
+}
+
+// layout container item wrap
+.layout__content--title--wrap{
+    background-color: $grey;
+    border-bottom: solid 1px $mustard;
+    padding: 12px 16px;
+    width: 100%;
+}
+.layout__content--title{
+    color: $off-white;
+    margin: 0;
+    padding: 0;
+}
+
+// layout no content available (nca) container
+.layout__content--nca--wrap{
+    background-color: rgb(32, 32, 32);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.layout__content--nca{
+    color: $mustard;
+}

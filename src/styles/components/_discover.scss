@@ -1,0 +1,136 @@
+.discover{
+    background-color: $light-black;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 12px 16px;
+    width: 100%;
+}
+
+// discover user item
+.discover__user--item{
+    align-items: center;
+    background-color: $black;
+    border-radius: 5px !important;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    height: 10vh;
+    padding: 12px 16px;
+    width: 100%;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+}
+
+// discover image wrap
+.discover__user--img--wrap{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    width: 20%;
+}
+
+.discover__user--img{
+    background-color: $grey;
+    border-radius: 100px;
+    height: 60px;
+    width: 60px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+// discover details wrap
+.discover__user--details--wrap{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.discover__user--details--name{
+    color: rgb(199, 179, 67);
+}
+.discover__user--details--gender{
+    color: rgb(199, 179, 67);
+}
+
+// discover actionn buttons
+.discover__user--btn--wrap{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+.discover__user--btn{
+    color: #353535;
+    background: none !important;
+    border: none !important;
+    font-size: 2rem;
+}
+
+// ! discover form
+.discover__form{
+    align-items: center;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 12px 16px;
+    width: 100%;
+}
+
+.discover__form--input{
+    color: $off-white;
+    padding-left: 10px !important; 
+    width: 50%;
+}
+.discover__form--input::placeholder{
+    color: rgb(82, 82, 82);
+}
+.discover__form input:focus + label {
+    color: rgb(29, 29, 29) !important;
+}
+/* label underline focus color */
+.discover__form input:focus {
+    border-bottom: 1px solid $gold !important;
+    box-shadow: 0 1px 0 0 rgb(29, 29, 29) !important
+}
+
+.discover__form--btn{
+    border: none;
+    background-color: transparent !important;
+    margin-bottom: 25px;
+}
+
+.discover__form--btn--icon{
+    background-color: transparent !important;
+    border-radius: 100px;
+    color: $mustard;
+    font-size: 2.6rem;
+    padding: 12px 16px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+// disover user message
+.discover__msg--wrap{
+    background-color: rgb(32, 32, 32);
+    border-top: solid 1px $mustard; 
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+.discover__msg--text{
+    color: $mustard;
+}

@@ -1,0 +1,27 @@
+.settings{
+    background-color: $light-black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+// img wrap
+.settings__img--wrap{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: center;
+    width: 100%;
+}
+
+.settings__img{
+    background-color: grey;
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}

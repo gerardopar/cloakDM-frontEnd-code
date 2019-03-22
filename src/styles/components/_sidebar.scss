@@ -1,0 +1,89 @@
+.sidebar{
+    background-color: $off-black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+
+// user details wrap
+.sidebar__user--details--wrap{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    justify-content: center;
+    width: 100%;
+}
+
+.sidebar__user--img{
+    background-color: $grey;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.sidebar__user--text{
+    color: $gold;
+    margin-top: 10px; 
+}
+
+// sidebar navigation
+.sidebar__navigation{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sidebar__navigation--list{
+    background-color: $light-black; 
+    border-right: solid 1px $gold;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__navigation--link{
+    color: #F0EDF0;
+    margin-bottom: 5px;
+    padding: 12px 16px;
+    transition: all ease-out .5s;
+    -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -ms-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+}
+.sidebar__navigation--link:hover{
+    background-color: $black;
+}
+
+.sidebar__navigation--icon{
+    padding-right: 20px;
+}
+
+.sidebar__navigation--link--active{
+    background-color: $black;
+    color: $gold;
+}
+
+// sidebar logout btn
+.sidebar__navigation--logout{
+    color: $light-black;
+    background-color: #ef5350 !important;
+    border: none;
+    padding: 12px 16px;
+    transition: all ease-in .5s;
+    -webkit-transition: all ease-in .5s;
+    -moz-transition: all ease-in .5s;
+    -ms-transition: all ease-in .5s;
+    -o-transition: all ease-in .5s;
+}
+.sidebar__navigation--logout:hover{
+    background-color: #d32f2f !important;
+}
