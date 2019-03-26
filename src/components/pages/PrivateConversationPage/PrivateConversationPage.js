@@ -1,9 +1,9 @@
 // importing modules
 import React, { Component } from 'react';
 import io from 'socket.io-client';
+import { NavLink } from 'react-router-dom';
 
 //importing components
-import Header from '../../header/Header';
 import Layout from '../../layout/Layout';
 import SideBar from '../../sidebar/Sidebar';
 import PrivateConversationContent from './PrivateConversationContent';
@@ -199,7 +199,12 @@ class PrivateConversationPage extends Component {
     render(){
         return (
             <div>
-                <Header />
+                <div>
+                    <header className="header z-depth-5">
+                    <p></p>
+                    <NavLink to="/" exact={true} className="header__title">CLOAK<span className="header__title--span">DM</span></NavLink>
+                    </header>
+                </div>
                 <Layout>
                     <SideBar user={this.state.user}/>
                     <div className="privateConversation__content--layout">

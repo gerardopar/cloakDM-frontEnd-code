@@ -4,8 +4,35 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
+// sidebar btn
+.sidebar__btn--close{
+    color: $off-white;
+    font-size: 2.6rem;
+    right: 25px;
+    position: absolute;
+    top: 15px;
+}
+
+.sidebar__btn--open{
+    color: $off-white;
+    font-size: 2.6rem;
+    left: 25px;
+    position: absolute;
+    top: 15px;
+}
+
+// sidebar btn mobile
+.sidebar__btn--mobile--open{
+    color: $off-white;
+    display: none;
+    font-size: 2.6rem;
+    left: 25px;
+    position: absolute;
+    top: 15px;
+}
 
 // user details wrap
 .sidebar__user--details--wrap{
@@ -86,4 +113,101 @@
 }
 .sidebar__navigation--logout:hover{
     background-color: #d32f2f !important;
+}
+
+// sidebar mobile navigation
+.sidebar__mobile--nav--open{
+    background-color: black;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 1s ease-out;
+    width: 100%;
+    z-index: 100;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+}
+.sidebar__mobile--nav--close{
+    height: 100%;
+    left: -100%;
+    position: absolute;
+    top: 0;
+    transition: all 1s ease-out;
+    width: 100%;
+    z-index: 100;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+}
+
+.sidebar__mobile--navigation--list{
+    background-color: $light-black; 
+    border-right: solid 1px $gold;
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+.sidebar__mobile--navigation--logout{
+    color: $light-black;
+    background-color: #ef5350 !important;
+    border: none;
+    padding: 12px 16px;
+    transition: all ease-in .5s;
+    -webkit-transition: all ease-in .5s;
+    -moz-transition: all ease-in .5s;
+    -ms-transition: all ease-in .5s;
+    -o-transition: all ease-in .5s;
+    width: 100%;
+}
+.sidebar__mobile--navigation--logout:hover{
+    background-color: #d32f2f !important;
+}
+
+// * media queries
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 374.98px) and (orientation: portrait) {
+    .sidebar__btn--mobile--open{
+        display: block;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 413.98px) and (orientation: portrait) {
+    .sidebar__btn--mobile--open{
+        display: block;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 575.98px) and (orientation: portrait) {
+    .sidebar__btn--mobile--open{
+        display: block;
+    }
+}
+
+@media (max-width: 575.98px) and (orientation: landscape) {
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
 }

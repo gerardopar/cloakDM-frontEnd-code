@@ -8,8 +8,21 @@
 }
 
 // layout sidebar
-.layout__sidebar{
+.layout__sidebar--open{
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
     width: 20%;
+}
+.layout__sidebar--close{
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    width: 0;
 }
 
 // layout content container
@@ -17,6 +30,11 @@
     background-color: $light-black;
     overflow-y: scroll;
     width: 80%;
+}
+.layout__content--expand{
+    background-color: $light-black;
+    overflow-y: scroll;
+    width: 100%;
 }
 
 // layout container item wrap
@@ -46,4 +64,108 @@
 }
 .layout__content--nca{
     color: $mustard;
+}
+
+// * media queries
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 374.98px) and (orientation: portrait) {
+
+    // layout sidebar
+    .layout__sidebar--open{
+        display: none;
+    }
+
+    // layout content container
+    .layout__content{
+        width: 100%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 413.98px) and (orientation: portrait) {
+
+    // layout sidebar
+    .layout__sidebar--open{
+        display: none;
+    }
+
+    // layout content container
+    .layout__content{
+        width: 100%;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 575.98px) and (orientation: portrait) {
+
+    // layout sidebar
+    .layout__sidebar--open{
+        display: none;
+    }
+
+    // layout content container
+    .layout__content{
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) and (orientation: landscape) {
+    // layout container
+    .layout{
+        height: 115vh;
+    }
+
+    // layout sidebar
+    .layout__sidebar--open{
+        width: 30%;
+    }
+
+    // layout content container
+    .layout__content{
+        width: 70%;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    // layout container
+    .layout{
+        height: 115vh;
+    }
+
+    // layout sidebar
+    .layout__sidebar--open{
+        width: 30%;
+    }
+
+    // layout content container
+    .layout__content{
+        width: 70%;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    // layout container
+    .layout{
+        height: 115vh;
+    }
+
+    // layout sidebar
+    .layout__sidebar--open{
+        width: 30%;
+    }
+
+    // layout content container
+    .layout__content{
+        width: 70%;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
 }

@@ -5,6 +5,7 @@
     flex-direction: column;
     height: 92vh;
     justify-content: center;
+    text-align: center;
 }
 
 .form--active{
@@ -68,4 +69,109 @@
 
 .login__forgotPassword--link:hover{
     border-bottom: solid 1px $mustard; 
+}
+
+// * media queries
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 374.98px) and (orientation: portrait) {
+    .login__title{
+        font-size: 3rem !important;
+    }
+
+    .login__form--email,
+    .login__form--password{
+    width: 80% !important;
+    }
+
+    .login__form{
+        width: 80%;
+    }
+
+    .login__form--btn{
+        width: 75%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 413.98px) and (orientation: portrait) {
+    .login__form--email,
+    .login__form--password{
+    width: 80% !important;
+    }
+
+    .login__form{
+        width: 80%;
+    }
+
+    .login__form--btn{
+        width: 75%;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 575.98px) and (orientation: portrait) {
+    .login__form--email,
+    .login__form--password{
+    width: 80% !important;
+    }
+
+    .login__form{
+        width: 80%;
+    }
+
+    .login__form--btn{
+        width: 75%;
+    }
+}
+
+@media (max-width: 575.98px) and (orientation: landscape) {
+    .login{
+        height: 120vh;
+    }
+
+    .login__form--email,
+    .login__form--password{
+    width: 60% !important;
+    }
+
+    .login__form{
+        width: 80%;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .login{
+        height: 100vh;
+    }
+
+    .login__form--email,
+    .login__form--password{
+    width: 60% !important;
+    }
+
+    .login__form{
+        width: 80%;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .login{
+        height: 100vh;
+    }
+
+    .login__form{
+        width: 80%;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .login__form{
+        width: 70%;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
 }

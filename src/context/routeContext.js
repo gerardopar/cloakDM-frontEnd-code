@@ -4,5 +4,9 @@ import React from 'react';
 export default React.createContext({
     isAuth: false,
     handleLogout: () => {},
-    userData: {}
+    userData: {},
+    isHidden: false,
+    isMobileHidden: true,
+    handleSidebar: () => {},
+    handleMobileSidebar: () => {},
 });

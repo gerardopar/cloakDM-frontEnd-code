@@ -29,9 +29,13 @@ class AppRouter extends Component {
             isAuth: false,
             token: null,
             user: {},
-            userId: null
+            userId: null,
+            isHidden: false,
+            isMobileHidden: true
         }
 
+        this.handleSidebar = this.handleSidebar.bind(this);
+        this.handleMobileSidebar = this.handleMobileSidebar.bind(this);
         this.handleLogin = this.handleLogin.bind(this);
         this.handleLogout = this.handleLogout.bind(this);
         this.handleAutoLogout = this.handleAutoLogout.bind(this);
@@ -53,6 +57,15 @@ class AppRouter extends Component {
         // if(expDate < currentDate) {
         //     this.handleAutoLogout();
         // }
+    }
+
+    handleSidebar(){
+        this.setState({ isHidden: !this.state.isHidden  });
+    }
+
+    handleMobileSidebar(){
+        this.setState({ isMobileHidden: !this.state.isMobileHidden  });
+        console.log(this.state.isMobileHidden);
     }
 
     // method: authenticates user
@@ -235,9 +248,13 @@ class AppRouter extends Component {
             <div>
             <RouteContext.Provider
             value={{ 
+                    handleMobileSidebar: this.handleMobileSidebar,
+                    handleSidebar: this.handleSidebar,
                     handleLogout: this.handleLogout,
                     isAuth: this.state.isAuth,
-                    userData: {...this.state.user}
+                    userData: {...this.state.user},
+                    isHidden: this.state.isHidden,
+                    isMobileHidden: this.state.isMobileHidden
                 }}>
                 {routes}
             </RouteContext.Provider>
