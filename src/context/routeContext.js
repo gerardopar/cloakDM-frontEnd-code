@@ -9,4 +9,5 @@ export default React.createContext({
     isMobileHidden: true,
     handleSidebar: () => {},
     handleMobileSidebar: () => {},
+    handleMobileCollapse: () => {}
 });

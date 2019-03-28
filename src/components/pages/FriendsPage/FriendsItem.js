@@ -18,7 +18,7 @@ const FriendItem = (props) => (
         </div>
         <div className="friends__user--btn--wrap">
             <button onClick={() => props.handleCreateConvo(props._id)} className="friends__user--btn waves-effect waves-light friends__user--btn--msg"><i className="fas fa-comments"></i><br /><span className="friends__user--btn--span">MESSAGE</span></button>
-            <button className="friends__user--btn waves-effect waves-light friends__user--btn--block"><i className="fas fa-ban"></i><br /><span className="friends__user--btn--span">BLOCK</span></button>
+            {/*<button className="friends__user--btn waves-effect waves-light friends__user--btn--block"><i className="fas fa-ban"></i><br /><span className="friends__user--btn--span">BLOCK</span></button>*/}
             <button onClick={() => props.handleRemoveFriend(props._id)} className="friends__user--btn waves-effect waves-light friends__user--btn--delete"><i className="fas fa-user-minus"></i><br /><span className="friends__user--btn--span">REMOVE</span></button>
         </div>
     </div>

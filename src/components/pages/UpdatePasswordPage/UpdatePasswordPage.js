@@ -1,7 +1,6 @@
 // importing modules
 import React, { Component } from 'react';
-// importing components
-import Header from '../../header/Header';
+import { NavLink } from 'react-router-dom';
 
 class UpdatePasswordPage extends Component {
     constructor(props){
@@ -74,7 +73,12 @@ class UpdatePasswordPage extends Component {
     render(){
         return(
             <div>
-                <Header />
+                <div>
+                    <header className="header z-depth-5">
+                    <p></p>
+                    <NavLink to="/" exact={true} className="header__title">CLOAK<span className="header__title--span">DM</span></NavLink>
+                    </header>
+                </div>
                 <div className="reset">
                     <form onSubmit={this.handlePasswordReset} className="reset__form">
                         <input className="reset__form--input" type="password" placeholder="new password" name="password"/>

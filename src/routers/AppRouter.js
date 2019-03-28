@@ -36,6 +36,7 @@ class AppRouter extends Component {
 
         this.handleSidebar = this.handleSidebar.bind(this);
         this.handleMobileSidebar = this.handleMobileSidebar.bind(this);
+        this.handleMobileCollapse = this.handleMobileCollapse.bind(this);
         this.handleLogin = this.handleLogin.bind(this);
         this.handleLogout = this.handleLogout.bind(this);
         this.handleAutoLogout = this.handleAutoLogout.bind(this);
@@ -66,6 +67,10 @@ class AppRouter extends Component {
     handleMobileSidebar(){
         this.setState({ isMobileHidden: !this.state.isMobileHidden  });
         console.log(this.state.isMobileHidden);
+    }
+
+    handleMobileCollapse(){
+        this.setState({ isMobileHidden: true });
     }
 
     // method: authenticates user
@@ -254,7 +259,8 @@ class AppRouter extends Component {
                     isAuth: this.state.isAuth,
                     userData: {...this.state.user},
                     isHidden: this.state.isHidden,
-                    isMobileHidden: this.state.isMobileHidden
+                    isMobileHidden: this.state.isMobileHidden,
+                    handleMobileCollapse: this.handleMobileCollapse
                 }}>
                 {routes}
             </RouteContext.Provider>

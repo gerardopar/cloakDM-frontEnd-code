@@ -53,9 +53,9 @@ class SignupPage extends Component {
                     </h1>
                     <p className="signup__text">Sign Up and Start creating connections!</p>
                     <form onSubmit={this.handleSignup} className="signup__form">
-                        <input name="username" className="signup__form--username" type="text" placeholder="username" required/>
-                        <input name="email" className="signup__form--email" type="email" placeholder="email" required/>
-                        <input name="password" className="signup__form--password" type="password" placeholder="password" required/>
+                        <input name="username" className="signup__form--username" type="text" placeholder="username" required autoComplete="off"/>
+                        <input name="email" className="signup__form--email" type="email" placeholder="email" required autoComplete="off"/>
+                        <input name="password" className="signup__form--password" type="password" placeholder="password" required autoComplete="off"/>
                         <button className="signup__form--btn waves-effect waves-light">SIGN UP</button>
                     </form>
                 </div>

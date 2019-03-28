@@ -11,6 +11,12 @@
     padding-bottom: 75px;
     width: 80%;
 }
+.privateConversation__content--layout--expand{
+    background-color: $light-black;
+    overflow-y: scroll;
+    padding-bottom: 75px;
+    width: 100%;
+}
 
 // private conversation list item
 .privateConversation__msg--item{
@@ -157,4 +163,64 @@ input[type=file]:before {
 
 input[type=file]::-webkit-file-upload-button {
     display: none;
+}
+
+// * media queries
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 374.98px) and (orientation: portrait) {
+    .privateConversation__content--layout,
+    .privateConversation__form--wrap{
+        width: 100%;
+    }
+
+    .privateConversation__form{
+        width: 100%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 413.98px) and (orientation: portrait) {
+    .privateConversation__content--layout,
+    .privateConversation__form--wrap{
+        width: 100%;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 575.98px) and (orientation: portrait) {
+    .privateConversation__content--layout,
+    .privateConversation__form--wrap{
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) and (orientation: landscape) {
+    .privateConversation__content--layout,
+    .privateConversation__form--wrap{
+        width: 70%;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .privateConversation__content--layout,
+    .privateConversation__form--wrap{
+        width: 70%;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .privateConversation__content--layout,
+    .privateConversation__form--wrap{
+        width: 70%;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
 }
