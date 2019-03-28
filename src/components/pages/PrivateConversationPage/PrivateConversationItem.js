@@ -12,7 +12,7 @@ const PrivateConversationItem = (props) => {
                 <i onClick={() => props.handleDeleteMessage(props._id)} className="far fa-trash-alt privateConversation--icon"></i>
             </div>
             <div className="privateConversation__text--wrap">
-                <img className="privateConversation__msg--userImg" src={props.userImg !== 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' ? 'http://localhost:3000/' + props.userImg : 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png'} alt="user img"/>
+                <img className="privateConversation__msg--userImg" src={props.userImg !== 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' ? 'https://cloakdm.herokuapp.com/' + props.userImg : 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png'} alt="user img"/>
                 <p className="privateConversation__msg--username--currentUser">{props.username}</p>
                 <p className="privateConversation__msg--text--currentUser">{props.text}</p>
                 <p>{moment(props.createdAt).format('MMM Do YY, h:mm:ss a')}</p>
@@ -20,7 +20,7 @@ const PrivateConversationItem = (props) => {
         </li> : props.authorId !== props.userId ? 
         <li className="privateConversation__msg--item">
             <div className="privateConversation__text--wrap">
-                <img className="privateConversation__msg--userImg" src={props.userImg !== 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' ? 'http://localhost:3000/' + props.userImg : 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png'} alt="user img"/>
+                <img className="privateConversation__msg--userImg" src={props.userImg !== 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' ? 'https://cloakdm.herokuapp.com/' + props.userImg : 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png'} alt="user img"/>
                 <p className="privateConversation__msg--username">{props.username}</p>
                 <p className="privateConversation__msg--text">{props.text}</p>
                 <p>{moment(props.createdAt).format('MMM Do YY, h:mm:ss a')}</p>
@@ -33,7 +33,7 @@ const PrivateConversationItem = (props) => {
     {
         props.messageImg !== null ? 
         <div className="privateConversation__text--wrap">
-            <img src={'http://localhost:3000/' + props.messageImg} />
+            <img src={'https://cloakdm.herokuapp.com/' + props.messageImg} />
         </div> : null
     }
     </React.Fragment>)

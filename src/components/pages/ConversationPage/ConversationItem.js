@@ -7,8 +7,8 @@ const ConversationItem = (props) => (
         
         {
             props.user._id === props.convoUsers[0]._id 
-                ? <img className="friends__user--img" src={props.convoUsers[1].profileImg !== 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' ? 'http://localhost:3000/' + props.convoUsers[1].profileImg : 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png'}/>
-                : props.user._id === props.convoUsers[1]._id ? <img className="friends__user--img" src={props.convoUsers[1].profileImg !== 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' ? 'http://localhost:3000/' + props.convoUsers[0].profileImg : 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png'}/>  : null
+                ? <img className="friends__user--img" src={props.convoUsers[1].profileImg !== 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' ? 'https://cloakdm.herokuapp.com/' + props.convoUsers[1].profileImg : 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png'}/>
+                : props.user._id === props.convoUsers[1]._id ? <img className="friends__user--img" src={props.convoUsers[1].profileImg !== 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' ? 'https://cloakdm.herokuapp.com/' + props.convoUsers[0].profileImg : 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png'}/>  : null
         }
         {
             props.user._id === props.convoUsers[0]._id 

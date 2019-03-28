@@ -19,8 +19,8 @@ class PrivateConversationPage extends Component {
 
         this.conversationID = this.props.match.params.id;
         this.updateMessages = this.updateMessages.bind(this);
-        this.socket = io(`http://localhost:3000`);
-        // this.socket = io(`http://localhost:3000/${this.conversationID}`);
+        this.socket = io(`https://cloakdm.herokuapp.com`);
+        // this.socket = io(`https://cloakdm.herokuapp.com/${this.conversationID}`);
         this.handleDeleteMessage = this.handleDeleteMessage.bind(this);
         this.handleMessages = this.handleMessages.bind(this);
         this.handleMessageWithImg = this.handleMessageWithImg.bind(this);
@@ -64,7 +64,7 @@ class PrivateConversationPage extends Component {
 
     handleMessages(){
         const id = this.props.match.params.id;
-        fetch(`http://localhost:3000/messages`, {
+        fetch(`https://cloakdm.herokuapp.com/messages`, {
             method: 'POST',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,
@@ -91,7 +91,7 @@ class PrivateConversationPage extends Component {
         const message = e.target.elements.message.value;
         const id = this.conversationID;
 
-        fetch(`http://localhost:3000/replyToMessage`, {
+        fetch(`https://cloakdm.herokuapp.com/replyToMessage`, {
             method: 'POST',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,
@@ -122,7 +122,7 @@ class PrivateConversationPage extends Component {
 
     handleDeleteMessage(messageId){
         const id = this.props.match.params.id;
-        fetch(`http://localhost:3000/removeMessage`, {
+        fetch(`https://cloakdm.herokuapp.com/removeMessage`, {
             method: 'POST',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,
@@ -159,7 +159,7 @@ class PrivateConversationPage extends Component {
         formData.append('image', e.target.files[0]);
         formData.append('id', id);
 
-        fetch('http://localhost:3000/messageWithImg', {
+        fetch('https://cloakdm.herokuapp.com/messageWithImg', {
             method: 'POST',
             headers: {
                 Authorization: 'Bearer ' + this.props.token, // required to authenticate the user
@@ -178,7 +178,7 @@ class PrivateConversationPage extends Component {
     }
 
     handleCurrentUser(){
-        fetch('http://localhost:3000/getCurrentUser', {
+        fetch('https://cloakdm.herokuapp.com/getCurrentUser', {
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token, // required to authenticate the user

@@ -13,7 +13,7 @@ class ResetPage extends Component {
     handlePasswordReset(e){
         e.preventDefault();
         const email = e.target.elements.email.value;
-        fetch('http://localhost:3000/reset', {
+        fetch('https://cloakdm.herokuapp.com/reset', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

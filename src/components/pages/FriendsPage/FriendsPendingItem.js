@@ -5,7 +5,7 @@ const FriendsPendingItem = (props) => (
     
         <div className="friends__user--item z-depth-5">
             <Link className="friends__user--img--wrap" to={`/profile/${props._id}`}>
-                <img className="friends__user--img" src={props.profileImg !== 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' ? 'http://localhost:3000/' + props.profileImg : 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png'} alt="user image"/>
+                <img className="friends__user--img" src={props.profileImg !== 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' ? 'https://cloakdm.herokuapp.com/' + props.profileImg : 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png'} alt="user image"/>
             </Link>
             <div className="friends__user--details--wrap">
                 <p className="friends__user--details--name">{props.username}</p>

@@ -20,7 +20,7 @@ class UpdatePasswordPage extends Component {
 
     handleUserToken(){
         const token = this.token;
-        fetch('http://localhost:3000/postResetToken', {
+        fetch('https://cloakdm.herokuapp.com/postResetToken', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -47,7 +47,7 @@ class UpdatePasswordPage extends Component {
         const userId = this.state.userId;
         const password = e.target.elements.password.value;
 
-        fetch('http://localhost:3000/postNewPassword', {
+        fetch('https://cloakdm.herokuapp.com/postNewPassword', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

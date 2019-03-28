@@ -80,7 +80,7 @@ class AppRouter extends Component {
         const email = e.target.elements.email.value;
         const password = e.target.elements.password.value;
 
-        fetch(`http://localhost:3000/login`, {
+        fetch(`https://cloakdm.herokuapp.com/login`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -150,7 +150,7 @@ class AppRouter extends Component {
     }
 
     handleCurrentUser(token){
-        fetch('http://localhost:3000/getCurrentUser', {
+        fetch('https://cloakdm.herokuapp.com/getCurrentUser', {
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + token, // required to authenticate the user

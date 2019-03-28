@@ -27,7 +27,7 @@ class ConversationPage extends Component {
     }
 
     handleConversations(){
-        fetch('http://localhost:3000/getConversations', {
+        fetch('https://cloakdm.herokuapp.com/getConversations', {
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,
@@ -46,7 +46,7 @@ class ConversationPage extends Component {
     }
 
     handleCurrentUser(){
-        fetch('http://localhost:3000/getCurrentUser', {
+        fetch('https://cloakdm.herokuapp.com/getCurrentUser', {
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token, // required to authenticate the user
@@ -68,7 +68,7 @@ class ConversationPage extends Component {
         const conversationId = id;
         console.log(conversationId);
         
-        fetch(`http://localhost:3000/removeConversation`, {
+        fetch(`https://cloakdm.herokuapp.com/removeConversation`, {
             method: 'POST',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,

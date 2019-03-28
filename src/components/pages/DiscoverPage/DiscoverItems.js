@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const DiscoverItem = (props) => (
     <div className="discover__user--item z-depth-5">
         <Link className="discover__user--img--wrap" to={`/profile/${props._id}`}>
-            <img className="discover__user--img" src={props.profileImg !== 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' ? 'http://localhost:3000/' + props.profileImg : 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png'} alt="user image"/>
+            <img className="discover__user--img" src={props.profileImg !== 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' ? 'https://cloakdm.herokuapp.com/' + props.profileImg : 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png'} alt="user image"/>
         </Link>
         <div className="discover__user--details--wrap">
             <p className="discover__user--details--name">{props.username}</p>

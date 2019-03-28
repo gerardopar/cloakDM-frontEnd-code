@@ -16,7 +16,7 @@ const DashboardContent = (props) => (
                         {
                             props.user.profileImg === 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' 
                                 ?   <img className="dashboard__user--img" src={props.user.profileImg} alt="default user img" /> 
-                                :   <img className="dashboard__user--img" src={'http://localhost:3000/' + props.user.profileImg} alt="user img" /> 
+                                :   <img className="dashboard__user--img" src={'https://cloakdm.herokuapp.com/' + props.user.profileImg} alt="user img" /> 
                         }
                         <p className="dashboard__user--name">@{props.user.username}</p>
                         <p className="dashboard__user--name">Los Angeles, CA</p>
@@ -60,7 +60,7 @@ const DashboardContent = (props) => (
                         {
                             props.user.profileImg === 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' 
                                 ?   <img className="dashboard__user--img" src={props.user.profileImg} alt="default user img" /> 
-                                :   <img className="dashboard__user--img" src={'http://localhost:3000/' + props.user.profileImg} alt="user img" /> 
+                                :   <img className="dashboard__user--img" src={'https://cloakdm.herokuapp.com/' + props.user.profileImg} alt="user img" /> 
                         }
                         <p className="dashboard__user--name">@{props.user.username}</p>
                         <p className="dashboard__user--name">Los Angeles, CA</p>

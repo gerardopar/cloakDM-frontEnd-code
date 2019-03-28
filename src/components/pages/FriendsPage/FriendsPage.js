@@ -43,7 +43,7 @@ class FriendsPage extends Component {
     }
 
     handleFriends(){
-        fetch('http://localhost:3000/getFriends', {
+        fetch('https://cloakdm.herokuapp.com/getFriends', {
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,
@@ -62,7 +62,7 @@ class FriendsPage extends Component {
     }
 
     handleFriendRequests(){
-        fetch('http://localhost:3000/getFriendRequests', {
+        fetch('https://cloakdm.herokuapp.com/getFriendRequests', {
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,
@@ -81,7 +81,7 @@ class FriendsPage extends Component {
     }
 
     handlePendingRequests(){
-        fetch('http://localhost:3000/getPendingRequests', {
+        fetch('https://cloakdm.herokuapp.com/getPendingRequests', {
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,
@@ -100,7 +100,7 @@ class FriendsPage extends Component {
     }
 
     handleAddFriend(id){
-        fetch(`http://localhost:3000/addFriend`, {
+        fetch(`https://cloakdm.herokuapp.com/addFriend`, {
             method: 'POST',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,
@@ -126,7 +126,7 @@ class FriendsPage extends Component {
     }
 
     handleRejectFriend(id){
-        fetch(`http://localhost:3000/rejectFriend`, {
+        fetch(`https://cloakdm.herokuapp.com/rejectFriend`, {
             method: 'POST',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,
@@ -151,7 +151,7 @@ class FriendsPage extends Component {
     }
 
     handleRemoveFriend(id){
-        fetch(`http://localhost:3000/removeFriend`, {
+        fetch(`https://cloakdm.herokuapp.com/removeFriend`, {
             method: 'POST',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,
@@ -176,7 +176,7 @@ class FriendsPage extends Component {
     }
 
     handleCancelPendingRequest(id){
-        fetch(`http://localhost:3000/cancelPendingRequest`, {
+        fetch(`https://cloakdm.herokuapp.com/cancelPendingRequest`, {
             method: 'POST',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,
@@ -201,7 +201,7 @@ class FriendsPage extends Component {
     }
 
     handleCreateConvo(id){
-        fetch(`http://localhost:3000/newConversation`, {
+        fetch(`https://cloakdm.herokuapp.com/newConversation`, {
             method: 'POST',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,
@@ -224,7 +224,7 @@ class FriendsPage extends Component {
     }
 
     handleCurrentUser(){
-        fetch('http://localhost:3000/getCurrentUser', {
+        fetch('https://cloakdm.herokuapp.com/getCurrentUser', {
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token, // required to authenticate the user

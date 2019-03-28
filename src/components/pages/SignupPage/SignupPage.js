@@ -12,7 +12,7 @@ class SignupPage extends Component {
     handleSignup(e){
         e.preventDefault();
         console.log(e.target.elements.username.value);
-        fetch(`http://localhost:3000/signup`, {
+        fetch(`https://cloakdm.herokuapp.com/signup`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'

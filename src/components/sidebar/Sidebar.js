@@ -23,7 +23,7 @@ const SideBar = (props) => {
                     {
                         props.user.profileImg === 'https://www.tenforums.com/geek/gars/images/2/types/thumb__ser.png' 
                             ?   <img className="sidebar__user--img" src={props.user.profileImg} alt="" /> 
-                            :   <img className="sidebar__user--img" src={'http://localhost:3000/' + props.user.profileImg} alt="" /> 
+                            :   <img className="sidebar__user--img" src={'https://cloakdm.herokuapp.com/' + props.user.profileImg} alt="" /> 
                     }
                     <p className="sidebar__user--text">@{props.user.username}</p>
                 </div>

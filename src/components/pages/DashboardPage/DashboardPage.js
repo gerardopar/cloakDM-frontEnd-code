@@ -22,7 +22,7 @@ class DashboardPage extends Component {
     }
 
     handleCurrentUser(){
-        fetch('http://localhost:3000/getCurrentUser', {
+        fetch('https://cloakdm.herokuapp.com/getCurrentUser', {
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token, // required to authenticate the user

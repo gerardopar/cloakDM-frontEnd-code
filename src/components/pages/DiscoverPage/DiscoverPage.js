@@ -31,7 +31,7 @@ class DiscoverPage extends Component {
     }
 
     handleFriends(){
-        fetch('http://localhost:3000/getFriends', {
+        fetch('https://cloakdm.herokuapp.com/getFriends', {
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,
@@ -51,7 +51,7 @@ class DiscoverPage extends Component {
     }
 
     // handleLoadUsers(){
-    //     fetch('http://localhost:3000/users', {
+    //     fetch('https://cloakdm.herokuapp.com/users', {
     //         method: 'GET',
     //         headers: {
     //             Authorization: 'Bearer ' + this.props.token, // required to authenticate the user
@@ -71,7 +71,7 @@ class DiscoverPage extends Component {
     // }
 
     handleFriendRequest(id){
-        fetch(`http://localhost:3000/sendFriendRequest`, {
+        fetch(`https://cloakdm.herokuapp.com/sendFriendRequest`, {
             method: 'POST',
             headers: {
                 Authorization: 'Bearer ' + this.props.token, // required to authenticate the user
@@ -93,7 +93,7 @@ class DiscoverPage extends Component {
     }
 
     handleCurrentUser(){
-        fetch('http://localhost:3000/getCurrentUser', {
+        fetch('https://cloakdm.herokuapp.com/getCurrentUser', {
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token, // required to authenticate the user
@@ -116,7 +116,7 @@ class DiscoverPage extends Component {
         const userSearch = e.target.value;
         console.log(userSearch);
 
-        fetch(`http://localhost:3000/discoverUsers`, {
+        fetch(`https://cloakdm.herokuapp.com/discoverUsers`, {
             method: 'POST',
             headers: {
                 Authorization: 'Bearer ' + this.props.token, // required to authenticate the user
